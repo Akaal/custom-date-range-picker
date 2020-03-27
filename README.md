@@ -4,7 +4,16 @@ Custom Date Range Picker based on ngx-daterangepicker-material.
 
 # Dependencies
 
-ngx-daterangepicker-material
+1) ngx-daterangepicker-material
 
 
-moment.js
+2) moment.js
+
+
+3) ngx-bootrap
+
+
+4) Angular 8 
+
+
+5) Bootstrap 3
