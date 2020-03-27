@@ -1,0 +1,46 @@
+:host>>> .dpWrapper .buttons_input .btn{
+    width: 95px !important;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #0C5D98;
+}
+:host>>> .md-drppicker.shown{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #0C5D98;
+    border-radius: 0;
+}
+:host >>> .md-drppicker {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+:host >>>.md-drppicker td.active, .md-drppicker td.active:hover {
+    background-color: #0C5D98 !important;
+    /* border-color: transparent; */
+    /* color: #fff; */
+}
+:host >>>.md-drppicker th{
+    color: #0C5D98;
+    font-weight: normal;
+}
+
+/* buttons */
+.btn {
+    font-size: 12px;
+    padding: 6px;
+    width: 36px;
+    border-radius: 0;
+}
+.btn:focus {
+    outline: none !important;
+}
+.rangeShow{
+    font-size: 11px;
+    color: #888888;
+    margin: 5px 0 0 0;
+    height: 15.2px;
+    padding: 0;
+    float: none;
+}

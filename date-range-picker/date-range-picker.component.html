@@ -1,0 +1,28 @@
+<div>
+<ngx-daterangepicker-material  [hidden]="!DPshow"
+#datePicker
+autoApply = "true"
+dateLimit = '365'
+[locale]="locale"
+showClearButton = false
+(choosedDate)="choosedDate($event)"
+>
+</ngx-daterangepicker-material>
+
+
+<!-- <button (click)="toggleCal()">Toggle</button> -->
+<!-- <button (click)="reset()">Reset</button> -->
+<div class="btn-group" btnRadioGroup (click)="rangeSelected()" [(ngModel)]="radioModel">
+  <label class="btn btn-default" btnRadio="1" tabindex="0" role="button">1D</label>
+  <label class="btn btn-default" btnRadio="2" tabindex="0" role="button">2D</label>
+  <label class="btn btn-default" btnRadio="7" tabindex="0" role="button">7D</label>
+  <label class="btn btn-default" btnRadio="10" tabindex="0" role="button">10D</label>
+  <label class="btn btn-default" btnRadio="15" tabindex="0" role="button">15D</label>
+  <!-- <label class="btn btn-default" btnRadio="30" tabindex="0" role="button">30D</label> -->
+  <label class="btn btn-default" btnRadio="Custom"tabindex="0" role="button" (click)="toggleCal()">C</label>
+</div>
+<br>
+<p class="rangeShow">
+  <span [hidden]="selectedFromDateAPI== undefined ">{{chosenDateRange}}</span>
+</p>
+</div>
